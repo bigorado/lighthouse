@@ -1,0 +1,9 @@
+---
+- name: start-nginx
+  become: true
+  command: nginx
+  tags: nginx
+- name: reload-nginx
+  become: true
+  command: nginx -s reload
+  tags: nginx
